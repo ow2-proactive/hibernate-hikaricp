@@ -88,13 +88,13 @@ dependencies {
 uploadArchives {
     repositories {
         mavenDeployer {
-            pom.groupId = 'jsr223'
+            pom.groupId = 'org.hibernate'
 
             snapshotRepository(url: "http://repository.activeeon.com/content/repositories/snapshots/") {
                 authentication(userName: "${System.getProperty('nexusUsername')}",
                         password: "${System.getProperty('nexusPassword')}")
             }
-            repository(url: "http://repository.activeeon.com/content/repositories/releases/") {
+            repository(url: "http://repository.activeeon.com/content/repositories/thirdparty/") {
                 authentication(userName: "${System.getProperty('nexusUsername')}",
                         password: "${System.getProperty('nexusPassword')}")
             }
